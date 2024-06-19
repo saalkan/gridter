@@ -1,0 +1,36 @@
+body {
+  background-color: black;
+  color: rgb(231, 233, 234);
+  font-family: "Open Sans", sans-serif;
+  display: grid;
+  grid-template-columns: 2fr 7fr;
+  border: 5px solid lime;
+}
+
+.section-left {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.outer-div {
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  grid-template-rows: 50px 1fr;
+  border: 5px solid lime;
+}
+
+.outer-div__header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  grid-area: 1 / 1 / span 1 / span 2;
+}
+
+.outer-div__section-middle {
+  border: 5px solid red;
+}
+
+.outer-div__section-right {
+  border: 5px solid red;
+}
