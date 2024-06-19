@@ -13,6 +13,10 @@ body {
   z-index: 999;
 }
 
+.section-left__nav__ul {
+  list-style-type: none;
+}
+
 .outer-div {
   display: grid;
   grid-template-columns: 4fr 3fr;
@@ -25,6 +29,9 @@ body {
   top: 0;
   z-index: 999;
   grid-area: 1 / 1 / span 1 / span 2;
+  display: grid;
+  grid-template-columns: 2fr 2fr 3fr;
+  border: 5px solid magenta;
 }
 
 .outer-div__section-middle {
@@ -33,4 +40,8 @@ body {
 
 .outer-div__section-right {
   border: 5px solid red;
+}
+
+.outer-div__section-right__footer__nav__ul {
+  list-style-type: none;
 }
