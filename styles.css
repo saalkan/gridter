@@ -11,6 +11,9 @@ body {
   position: sticky;
   top: 0;
   z-index: 999;
+  display: grid;
+  grid-template-rows: 1fr 400px 1fr 2fr;
+  height: 100vh;
 }
 
 .section-left__nav__ul {
@@ -36,12 +39,28 @@ body {
 
 .outer-div__section-middle {
   border: 5px solid red;
+  display: grid;
+  grid-template-rows: 120px 50px 1fr;
 }
 
 .outer-div__section-right {
+  position: sticky;
+  top: 0;
+  z-index: 999;
   border: 5px solid red;
+  display: grid;
+  grid-template-rows: 145px 1000px 300px 165px;
 }
 
-.outer-div__section-right__footer__nav__ul {
+.outer-div__section-right__trends__ul {
   list-style-type: none;
+}
+
+.outer-div__section-right__footer__ul {
+  list-style-type: none;  
+}
+
+.outer-div__section-right__footer__ul a {
+  text-decoration: none;
+  color:rgb(231, 233, 234)
 }
