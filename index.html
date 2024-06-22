@@ -12,14 +12,14 @@
       <div>logo</div>
       <nav class="section-left__nav">
         <ul class="section-left__nav__ul">
-          <li><i></i>Home</li>
-          <li><i></i>Explore</li>
-          <li><i></i>Notifications</li>
-          <li><i></i>Messages</li>
-          <li><i></i>Grok</li>
-          <li><i></i>Communities</li>
-          <li><i></i>Profile</li>
-          <li><i></i>More</li>
+          <i></i><li>Home</li>
+          <i></i><li>Explore</li>
+          <i></i><li>Notifications</li>
+          <i></i><li>Messages</li>
+          <i></i><li>Grok</li>
+          <i></i><li>Communities</li>
+          <i></i><li>Profile</li>
+          <i></i><li>More</li>
         </ul>
       </nav>
       <button>Post</button>
@@ -27,7 +27,7 @@
     </section>
     <div class="outer-div">
       <header class="outer-div__header"><button>For you</button><button>Following</button><div>search bar</div></header>
-      <section class="outer-div__section-middle"><div>What is happening?!</div><button>Show 1million posts</button><div>tweets (scroll for more)</div></section>
+      <section class="outer-div__section-middle"><div>What is happening?!</div><button onclick="fetch_tweet()" id="tweet">Show 1million posts</button><div><div id="scroll_for_more">tweets (scroll for more)</div></div></section>
       <section class="outer-div__section-right">
         <div>Subscribe to Premium<button>Subscribe</button></div>
         <div>Trends for you
@@ -64,5 +64,8 @@
         </footer>
       </section>
     </div>
+
+    <script src="index.js"></script>
+
   </body>
 </html>
