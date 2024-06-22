@@ -12,7 +12,7 @@ async function fetch_tweet() {
 
     const last_element = document.getElementById("scroll_for_more");
     for (let i = 0; i < 5; i++) {
-      let new_tweet = `<div><p>${tweet}</p></div>`;
+      let new_tweet = `<div class="tweet-box"><p>${tweet}</p></div>`;
       last_element.insertAdjacentHTML('beforebegin', new_tweet);
       tweetcount++;
     }    
