@@ -1,2 +1,4 @@
 # gridter-WiP
- twitter clone, top-down css grid only
+margins<br/>
+responsive: how many breakpoints? (a lot...)<br/>
+css nesting?
