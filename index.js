@@ -12,7 +12,7 @@ async function fetch_tweet() {
 
     const last_element = document.getElementById("scroll_for_more");
     for (let i = 0; i < 5; i++) {
-      let new_tweet = `<div class="tweet-box"><img class="avatar-tweet" src="./assets/pepe-compress.png"/><h3>P.E.P.E.</h3><p>@shadilay · 1m</p><p class="actual-tweet">${tweet}</p><div class="icon-and-number">
+      let new_tweet = `<div class="tweet-box"><img class="avatar-tweet" src="./assets/pepe-compress.png"/><h4>P.E.P.E.</h4><p>@shadilay · 1m</p><p class="actual-tweet">${tweet}</p><div class="icon-and-number">
         <?xml version="1.0" encoding="utf-8"?>
         <!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
         <svg fill="#E7E9EA" width="16" height="16" version="1.1" id="lni_lni-bubble" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let options = {
     root: null,
     rootMargin: "0px",
-    threshold: 1
+    threshold: 0.3
   };
 
   function handleIntersect(entries, observer) {
