@@ -184,6 +184,7 @@ p {
   border: none;
   border-radius: 25px;
   box-shadow: none;
+  min-width: 75px;
 }
 
 .white-button {
@@ -319,8 +320,49 @@ p {
     display: none;
   }
 
-  .section-left {
+  .section-left img{
     display: none;
+  }
+
+  .section-left button {
+    display: none;
+  }
+
+  .section-left h4 {
+    display: none;
+  }
+
+  .section-left p {
+    display: none;
+  }
+
+  body {
+    display: grid;
+    grid-template-rows: auto 50px;
+  }
+
+  #hide-icon1 {
+    display: none;
+  }
+
+  #hide-icon2 {
+    display: none;
+  }
+  
+  .section-left {
+    grid-area: 2 / 1 / span 1 / span 1;
+    position: sticky;
+    bottom: -95vh;
+    z-index: 999;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: black;
+    padding-top: 5px;
+    border-top: 1px solid rgb(47, 51, 54);
+  }
+
+  .section-left svg {
+    grid-area: 1 / auto / span 1 / span 1;
   }
 
 }
